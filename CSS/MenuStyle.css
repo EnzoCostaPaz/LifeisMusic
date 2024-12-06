@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../IMGs/FundLogin5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Contêiner principal */
+.menu-container {
+    display: flex;
+    /* Itens em linha */
+    justify-content: space-around;
+    /* Espaçamento entre os itens */
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid #030202;
+    border-radius: 10px;
+    margin-left: 9rem;
+    z-index: 2;
+    position: relative;
+
+}
+
+/* Cada menu principal e seu submenu */
+.menu-group {
+    text-align: center;
+    position: relative;
+    /* Posiciona o submenu em relação ao menu principal */
+}
+
+/* Estilo para os links principais */
+.menu-item {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4068e3;
+    border: 2px solid #030202;
+    width: 12.5rem;
+    border-radius: 10px;
+    font-family: "Roboto";
+    color: #f9f9f9;
+}
+
+.menu-item:hover {
+    background-color: #2f4ead;
+}
+
+/* Estilo para as opções que aparecem ao clicar */
+.submenu {
+    opacity: 0;
+    /* Inicia invisível */
+    pointer-events: none;
+    /* Desativa interação quando invisível */
+    transform: translateY(-10px);
+    /* Move para fora da posição inicial */
+    position: absolute;
+    top: 100%;
+    /* Alinha diretamente abaixo do menu principal */
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    /* Suaviza entrada e saída */
+}
+
+.menu-group:hover .submenu {
+    opacity: 1;
+    /* Torna visível */
+    pointer-events: auto;
+    /* Habilita interação */
+    transform: translateY(0);
+    /* Move para a posição final */
+}
+
+.submenu a {
+    display: block;
+    padding: 8px;
+    background-color: #4068e3;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #030202;
+    color: #f9f9f9;
+    font-family: 'Poppins';
+    border-radius: 10px;
+    margin: 5px 0;
+    opacity: 0;
+    /* Começa invisível */
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-group:hover .submenu a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.submenu a:hover {
+    background-color: #2f4ead;
+}
+
+/* por ser uma area de risco, deixar o excluir como vermelho*/
+.submenu a.exc {
+    background-color: #c71e21;
+}
+
+.submenu a.exc:hover {
+    background-color: #9c1c1e;
+}
+
+.sign {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do título */
+}
+
+.sign h1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    margin: 0;
+    /* Remove margens extras */
+    color: #edeff2;
+    /* Cor para o título */
+}
+
+/* Estilo para a Slogan-container */
+.Slogan-container {
+    display: flex;
+    flex-direction: row;
+    /* Alinha texto e imagem lado a lado */
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: flex-start;
+    /* Alinha tudo para a esquerda */
+    gap: 10px;
+    /* Reduz o espaço entre o texto e a imagem */
+    width: 40%;
+    /* Reduz a largura total da div */
+    margin: 240px auto;
+    /* Centraliza a div na página */
+    padding: 10px;
+    /* Adiciona um leve espaçamento interno */
+    backdrop-filter: blur(10px);
+    border: 2px solid #030202;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    color: #1C1C1C;
+}
+
+/* Estilo para o texto */
+.left {
+    flex: 2;
+    /* Ocupa mais espaço que a imagem */
+    text-align: left;
+    /* Texto alinhado à esquerda */
+}
+
+.left .descr span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #edeff2;
+    margin-bottom: 5px;
+}
+
+/* Estilo para a imagem */
+.Slogan {
+    flex: 1;
+    /* A imagem ocupa menos espaço que o texto */
+    max-width: 80%;
+    /* Limita a largura da imagem */
+    max-height: 150px;
+    /* Limita a altura da imagem */
+    object-fit: contain;
+    /* Mantém a proporção da imagem */
+    margin: 0;
+    /* Remove margens desnecessárias */
+}

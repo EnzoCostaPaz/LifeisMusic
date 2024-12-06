@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `bancosqljava`
+-- Banco de dados: `bancosql`
 --
 
 -- --------------------------------------------------------
@@ -63,8 +63,7 @@ CREATE TABLE `aluno` (
 --
 
 INSERT INTO `aluno` (`nome_aluno`, `dtNasc_Aluno`, `Tel_Aluno`, `cod_Aluno`, `endereco_Aluno`, `cep_Aluno`, `cpf_Aluno`, `email_Aluno`) VALUES
-('Enzo Costa paz', '11/04/2008', '(11)98368-2322', 1, 'caetano veloso,252', '00310-450', '484535138-21', 'enzocostapaz@gmail.com\r\n'),
-('Jhonatan Alves', '26/06/2007', '(11)96331-4459', 2, 'Av. Dr. Assis Ribeiro,8610', '56576-756', '484535138-27', 'jhonataalvesdonascimento@gmail.com');
+('Enzo Costa Paz', '2008-04-11', '(11) 98369-2322', 3, 'Avelino Matos Machado, 450', '54543-500', '496895998-28', 'Silva@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -124,8 +123,9 @@ CREATE TABLE `instrumento` (
 
 INSERT INTO `instrumento` (`nome_Instrumento`, `Dif_instrumento`, `cod_Instrumeto`, `modelo_Instrumento`) VALUES
 ('violão', 2, 1, 'corda'),
-('tambor', 1, 4, 'percursão'),
-('flauta', 3, 5, 'sopro');
+('tambor', 2, 4, 'percursão-som'),
+('flauta', 3, 5, 'sopro'),
+('Bateria', 3, 6, 'Som');
 
 -- --------------------------------------------------------
 
@@ -135,7 +135,7 @@ INSERT INTO `instrumento` (`nome_Instrumento`, `Dif_instrumento`, `cod_Instrumet
 
 CREATE TABLE `professor` (
   `Nome_Prof` varchar(150) NOT NULL,
-  `DataNasc_Prof` varchar(10) NOT NULL,
+  `DataNasc_Prof` date NOT NULL,
   `cep_prof` varchar(10) NOT NULL,
   `endereco_prof` varchar(40) NOT NULL,
   `Id_Prof` int(11) NOT NULL,
@@ -149,8 +149,7 @@ CREATE TABLE `professor` (
 --
 
 INSERT INTO `professor` (`Nome_Prof`, `DataNasc_Prof`, `cep_prof`, `endereco_prof`, `Id_Prof`, `cpf_Prof`, `email_prof`, `telefone_Prof`) VALUES
-('Edna Pittner', '23/05/1950', '12345-888', 'rua capivara dos santos', 1, '567487458-67', 'edinaPittner@gmail.com', '(11)91256-7922'),
-('Clayton pinheiro', '21/02/1990', '46656-555', 'rua catinga palmas', 2, '923548052-33', 'PinheiroClayton@gmail.com', '(11)93501-5625');
+('Edna Pittner Siqueira', '2001-09-11', '43242-2000', 'Rua Professor,90', 3, '354453343-21', 'Edna@etec.sp.gov.br', '(11) 98368-2000');
 
 -- --------------------------------------------------------
 
@@ -268,7 +267,7 @@ ALTER TABLE `turma`
 -- AUTO_INCREMENT de tabela `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `cod_Aluno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cod_Aluno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `dif_instrumento`
@@ -280,13 +279,13 @@ ALTER TABLE `dif_instrumento`
 -- AUTO_INCREMENT de tabela `instrumento`
 --
 ALTER TABLE `instrumento`
-  MODIFY `cod_Instrumeto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `cod_Instrumeto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `professor`
 --
 ALTER TABLE `professor`
-  MODIFY `Id_Prof` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id_Prof` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `sala`

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Out-2024 às 19:52
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.0.13
+-- Tempo de geração: 06/12/2024 às 23:41
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,29 +24,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `acesso`
-
+-- Estrutura para tabela `acesso`
 --
-create database `bancosql`;
-use `bancosql`;
 
 CREATE TABLE `acesso` (
   `usuario` varchar(15) NOT NULL,
   `senha` varchar(8) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `acesso`
+-- Despejando dados para a tabela `acesso`
 --
 
 INSERT INTO `acesso` (`usuario`, `senha`) VALUES
 ('coordenador', 'clayton1'),
-('diretor', 'eupi1234');
+('diretor', 'eupi1234'),
+('admim', 'Usu1234');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `aluno`
+-- Estrutura para tabela `aluno`
 --
 
 CREATE TABLE `aluno` (
@@ -58,29 +56,28 @@ CREATE TABLE `aluno` (
   `cep_Aluno` varchar(10) NOT NULL,
   `cpf_Aluno` varchar(12) NOT NULL,
   `email_Aluno` varchar(150) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `aluno`
+-- Despejando dados para a tabela `aluno`
 --
 
 INSERT INTO `aluno` (`nome_aluno`, `dtNasc_Aluno`, `Tel_Aluno`, `cod_Aluno`, `endereco_Aluno`, `cep_Aluno`, `cpf_Aluno`, `email_Aluno`) VALUES
-('Enzo Costa paz', '11/04/2008', '(11)98368-2322', 1, 'caetano veloso,252', '00310-450', '484535138-21', 'enzocostapaz@gmail.com\r\n'),
-('Jhonatan Alves', '26/06/2007', '(11)96331-4459', 2, 'Av. Dr. Assis Ribeiro,8610', '56576-756', '484535138-27', 'jhonataalvesdonascimento@gmail.com');
+('Enzo Costa Paz', '2008-04-11', '(11) 98369-2322', 3, 'Avelino Matos Machado, 450', '54543-500', '496895998-28', 'Silva@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `aluno_turma`
+-- Estrutura para tabela `aluno_turma`
 --
 
 CREATE TABLE `aluno_turma` (
   `cod_Aluno` int(11) NOT NULL,
   `Cod_turma` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `aluno_turma`
+-- Despejando dados para a tabela `aluno_turma`
 --
 
 INSERT INTO `aluno_turma` (`cod_Aluno`, `Cod_turma`) VALUES
@@ -90,16 +87,16 @@ INSERT INTO `aluno_turma` (`cod_Aluno`, `Cod_turma`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `dif_instrumento`
+-- Estrutura para tabela `dif_instrumento`
 --
 
 CREATE TABLE `dif_instrumento` (
   `Descricao` varchar(40) NOT NULL,
   `Dif_instrumento` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `dif_instrumento`
+-- Despejando dados para a tabela `dif_instrumento`
 --
 
 INSERT INTO `dif_instrumento` (`Descricao`, `Dif_instrumento`) VALUES
@@ -110,7 +107,7 @@ INSERT INTO `dif_instrumento` (`Descricao`, `Dif_instrumento`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `instrumento`
+-- Estrutura para tabela `instrumento`
 --
 
 CREATE TABLE `instrumento` (
@@ -118,56 +115,56 @@ CREATE TABLE `instrumento` (
   `Dif_instrumento` int(11) NOT NULL,
   `cod_Instrumeto` int(11) NOT NULL,
   `modelo_Instrumento` varchar(30) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `instrumento`
+-- Despejando dados para a tabela `instrumento`
 --
 
 INSERT INTO `instrumento` (`nome_Instrumento`, `Dif_instrumento`, `cod_Instrumeto`, `modelo_Instrumento`) VALUES
 ('violão', 2, 1, 'corda'),
-('tambor', 1, 4, 'percursão'),
-('flauta', 3, 5, 'sopro');
+('tambor', 2, 4, 'percursão-som'),
+('flauta', 3, 5, 'sopro'),
+('Bateria', 3, 6, 'Som');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `professor`
+-- Estrutura para tabela `professor`
 --
 
 CREATE TABLE `professor` (
   `Nome_Prof` varchar(150) NOT NULL,
-  `DataNasc_Prof` varchar(10) NOT NULL,
+  `DataNasc_Prof` date NOT NULL,
   `cep_prof` varchar(10) NOT NULL,
   `endereco_prof` varchar(40) NOT NULL,
   `Id_Prof` int(11) NOT NULL,
   `cpf_Prof` varchar(12) NOT NULL,
   `email_prof` varchar(150) NOT NULL,
   `telefone_Prof` varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `professor`
+-- Despejando dados para a tabela `professor`
 --
 
 INSERT INTO `professor` (`Nome_Prof`, `DataNasc_Prof`, `cep_prof`, `endereco_prof`, `Id_Prof`, `cpf_Prof`, `email_prof`, `telefone_Prof`) VALUES
-('Edna Pittner', '23/05/1950', '12345-888', 'rua capivara dos santos', 1, '567487458-67', 'edinaPittner@gmail.com', '(11)91256-7922'),
-('Clayton pinheiro', '21/02/1990', '46656-555', 'rua catinga palmas', 2, '923548052-33', 'PinheiroClayton@gmail.com', '(11)93501-5625');
+('Edna Pittner Siqueira', '2001-09-11', '43242-2000', 'Rua Professor,90', 3, '354453343-21', 'Edna@etec.sp.gov.br', '(11) 98368-2000');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `sala`
+-- Estrutura para tabela `sala`
 --
 
 CREATE TABLE `sala` (
   `id_Sala` int(11) NOT NULL,
   `caps_Sala` int(11) NOT NULL,
   `Desc_Sala` varchar(30) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `sala`
+-- Despejando dados para a tabela `sala`
 --
 
 INSERT INTO `sala` (`id_Sala`, `caps_Sala`, `Desc_Sala`) VALUES
@@ -177,17 +174,17 @@ INSERT INTO `sala` (`id_Sala`, `caps_Sala`, `Desc_Sala`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tipo_instrumento`
+-- Estrutura para tabela `tipo_instrumento`
 --
 
 CREATE TABLE `tipo_instrumento` (
   `Categ_instrumentos` varchar(20) NOT NULL,
   `Id_Prof` int(11) NOT NULL,
   `cod_Instrumeto` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `tipo_instrumento`
+-- Despejando dados para a tabela `tipo_instrumento`
 --
 
 INSERT INTO `tipo_instrumento` (`Categ_instrumentos`, `Id_Prof`, `cod_Instrumeto`) VALUES
@@ -197,7 +194,7 @@ INSERT INTO `tipo_instrumento` (`Categ_instrumentos`, `Id_Prof`, `cod_Instrumeto
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `turma`
+-- Estrutura para tabela `turma`
 --
 
 CREATE TABLE `turma` (
@@ -206,10 +203,10 @@ CREATE TABLE `turma` (
   `id_Sala` int(11) NOT NULL,
   `Turno` varchar(11) NOT NULL,
   `Serie` char(2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `turma`
+-- Despejando dados para a tabela `turma`
 --
 
 INSERT INTO `turma` (`cod_Instrumento`, `Cod_turma`, `id_Sala`, `Turno`, `Serie`) VALUES
@@ -221,56 +218,56 @@ INSERT INTO `turma` (`cod_Instrumento`, `Cod_turma`, `id_Sala`, `Turno`, `Serie`
 --
 
 --
--- Índices para tabela `acesso`
+-- Índices de tabela `acesso`
 --
 ALTER TABLE `acesso`
   ADD PRIMARY KEY (`usuario`);
 
 --
--- Índices para tabela `aluno`
+-- Índices de tabela `aluno`
 --
 ALTER TABLE `aluno`
   ADD PRIMARY KEY (`cod_Aluno`);
 
 --
--- Índices para tabela `dif_instrumento`
+-- Índices de tabela `dif_instrumento`
 --
 ALTER TABLE `dif_instrumento`
   ADD PRIMARY KEY (`Dif_instrumento`);
 
 --
--- Índices para tabela `instrumento`
+-- Índices de tabela `instrumento`
 --
 ALTER TABLE `instrumento`
   ADD PRIMARY KEY (`cod_Instrumeto`);
 
 --
--- Índices para tabela `professor`
+-- Índices de tabela `professor`
 --
 ALTER TABLE `professor`
   ADD PRIMARY KEY (`Id_Prof`);
 
 --
--- Índices para tabela `sala`
+-- Índices de tabela `sala`
 --
 ALTER TABLE `sala`
   ADD PRIMARY KEY (`id_Sala`);
 
 --
--- Índices para tabela `turma`
+-- Índices de tabela `turma`
 --
 ALTER TABLE `turma`
   ADD PRIMARY KEY (`Cod_turma`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
 -- AUTO_INCREMENT de tabela `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `cod_Aluno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cod_Aluno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `dif_instrumento`
@@ -282,13 +279,13 @@ ALTER TABLE `dif_instrumento`
 -- AUTO_INCREMENT de tabela `instrumento`
 --
 ALTER TABLE `instrumento`
-  MODIFY `cod_Instrumeto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `cod_Instrumeto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `professor`
 --
 ALTER TABLE `professor`
-  MODIFY `Id_Prof` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id_Prof` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `sala`

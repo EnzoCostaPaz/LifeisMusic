@@ -67,7 +67,7 @@ Se tudo estiver dado certo, você será levado para pagina de login, para entrar
 A aplicação java segue os mesmos padrões de funcionaliades da aplicação web, sua unica difença é que todas funcioanlidades estão em uma unica tela
 
 ## como acessar a aplicação?
-vá para a branch "Java-Aplicação" e baixe o repositório
+vá para a branch "Aplicação-Java" e baixe o repositório
 <br><br>
 Siga os mesmos passos para instalar o xampp e importar o banco
 <br><br>

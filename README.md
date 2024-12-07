@@ -1,6 +1,10 @@
 # oque é Life is Music🎼🎵
 Life is music é um projeto interdisciplinar simulando uma escola de musica onde o usuario pode acessar certas tabelas e fazer diversas funcioanlidades com elas, temos uma aplicação web e uma aplicação Java
-<br>
+## Integrantes do Projeto:
+- <a href = "https://github.com/Guzhie">Gustavo Henrique</a>
+- <a href = "">Jhonata Alves</a>
+- <a href = "">Enzo Costa Paz</a>
+
 ## Aplicação Web
 ### Funcionalidades
 
@@ -45,9 +49,29 @@ as funções acima podem ser feitas nas seguintes tabelas:
   <img src = "https://github.com/user-attachments/assets/21380321-c752-4b6e-a813-8582ab28c81f">
   
 ## Como acessar nosso site:
+Baixe e extraia o repositório e renomeie a pasta para sua preferência(por que não alterar para "LifeisMusic" ?👀)
+<br>
 Baixe o <a href = "https://www.apachefriends.org/pt_br/download.html">xampp</a> em seu site e ligue as opções: <b>Apache e MySQL</b> , importe a pasta do repositório para a pasta <b>C:/xampp/htdocs</b>
 <br>
 após isso importe o banco de dados disponivel e coloque o seguinte link em seu navegador:
-localhost/Web/Login
+<br>
+<b>localhost/Pasta-Renomeada/Login</b>
+<br>
+Se tudo estiver dado certo, você será levado para pagina de login, para entrar, utilize alguns dos usuario e senha que está na tabela <b>acesso</b> no banco de dados
 
+# Aplicação Java:
+A aplicação java segue os mesmos padrões de funcionaliades da aplicação web, sua unica difença é que todas funcioanlidades estão em uma unica tela
+
+## como acessar a aplicação?
+vá para a branch "Java-Aplicação" e baixe o repositório
+<br><br>
+Siga os mesmos passos para instalar o xampp e importar o banco
+<br><br>
+utilize algum framework para rodar a aplicação (Visual Studio Code ou NetBeans)
+<br><br>
+importe os drivers necessarios que estão na pasta <b>/BD</b> dentro do repositório
+<br><br>
+no framework abra a pasta <b>Forms</b> e vá para o arquivo <b>LoginPag.java</b> e rode a aplicação
+<br><br>
+Se tudo tiver dado certo novamente , a aplicação vai ser rodada e apareça uma tela de login para você, faça o mesmo esquema da aplicaçao web para utilizar um usuario e senha
 

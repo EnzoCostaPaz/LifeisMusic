@@ -10,7 +10,7 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
     <tr>
       <td align="center">
         <a href="https://github.com/Guzhie">
-          <img src="https://avatars.githubusercontent.com/u/133404058?v=4" width="100px;" alt="Gustavo - Github"/><br>
+          <img src="https://avatars.githubusercontent.com/u/133404058?v=4" width="200px;" alt="Gustavo - Github"/><br>
           <sub>
             <b>Gustavo Henrique</b>
           </sub> <br>
@@ -18,7 +18,7 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
       </td>
       <td align="center">
         <a href="https://github.com/JHOW-JHOW">
-          <img src="https://avatars.githubusercontent.com/u/128919491?v=4" width="100px;" alt="João Mota - Github"/><br>
+          <img src="https://avatars.githubusercontent.com/u/128919491?v=4" width="200px;" alt="Jhonata - Github"/><br>
           <sub>
             <b>Jhonata Alves</b>
           </sub> <br>
@@ -27,7 +27,7 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
       </td>
       <td align="center">
         <a href="https://github.com/EnzoCostaPaz">
-          <img src="https://avatars.githubusercontent.com/u/125403389?v=4" width="100px;" alt="Nino - Github"/><br>
+          <img src="https://avatars.githubusercontent.com/u/133404019?v=4" width="200px;" alt="Enzo - Github"/><br>
           <sub>
             <b>Enzo Costa</b>
           </sub> <br> 

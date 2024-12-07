@@ -10,6 +10,7 @@ Atualmente você pode:
 - 👀<b>Listar</b> dados das tabelas
 - ✏️<b>Atualizar</b> dados das tabelas
 - ❌<b>Deletar</b> dados das tabelas
+- 🔎<b>Pesquisar</b> certos dados das tabelas
 <br>
 as funções acima podem ser feitas nas seguintes tabelas:
 
@@ -29,7 +30,24 @@ as funções acima podem ser feitas nas seguintes tabelas:
 <br>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="70" height="70" /><b>SQL</b>: Usado para gerenciar e manipular os dados armazenados nas tabelas do banco de dados
 
-  ### Algumas das nossas telas:
-- Tela de Listagem:
+  ### Algumas de nossas telas:
   
+#### Tela de Listagem:
+  <img src="https://github.com/user-attachments/assets/e63c61cd-009f-4f00-a060-77faebf8f2d0">
+  
+#### Tela de Cadastro:
+  <img src = "https://github.com/user-attachments/assets/fc8858b4-2758-4285-812a-140c94927c31">
+  
+### Tela de Pesquisar: 
+  <img src = "https://github.com/user-attachments/assets/8c3a1555-dc14-46dc-af22-861e915bb34e">
+  
+### Tela de Exluir:
+  <img src = "https://github.com/user-attachments/assets/21380321-c752-4b6e-a813-8582ab28c81f">
+  
+## Como acessar nosso site:
+Baixe o <a href = "https://www.apachefriends.org/pt_br/download.html">xampp</a> em seu site e ligue as opções: <b>Apache e MySQL</b> , importe a pasta do repositório para a pasta <b>C:/xampp/htdocs</b>
+<br>
+após isso importe o banco de dados disponivel e coloque o seguinte link em seu navegador:
+localhost/Web/Login
+
 

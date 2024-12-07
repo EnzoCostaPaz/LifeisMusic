@@ -5,10 +5,35 @@
 # oque é Life is Music🎼🎵
 Life is music é um projeto interdisciplinar simulando uma escola de musica onde o usuario pode acessar certas tabelas e fazer diversas funcioanlidades com elas, temos uma aplicação web e uma aplicação Java
 ## Integrantes do Projeto:
-- <a href = "https://github.com/Guzhie">Gustavo Henrique</a>
-- <a href = "https://github.com/JHOW-JHOW">Jhonata Alves</a>
-- <a href = "https://github.com/EnzoCostaPaz">Enzo Costa</a>
-
+<div align=center>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Guzhie">
+          <img src="https://avatars.githubusercontent.com/u/125403873?v=4" width="100px;" alt="Rodrigo - Github"/><br>
+          <sub>
+            <b>Gustavo Henrique</b>
+          </sub> <br>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/JHOW-JHOW">
+          <img src="https://avatars.githubusercontent.com/u/125403880?v=4" width="100px;" alt="João Mota - Github"/><br>
+          <sub>
+            <b>Jhonata Alves</b>
+          </sub> <br>
+        </a>
+      </td>
+      </td>
+      <td align="center">
+        <a href="https://github.com/EnzoCostaPaz">
+          <img src="https://avatars.githubusercontent.com/u/125403389?v=4" width="100px;" alt="Nino - Github"/><br>
+          <sub>
+            <b>Enzo Costa</b>
+          </sub> <br> 
+        </a>
+      </td>
+  </table>
 ## Aplicação Web
 ### Funcionalidades
 

@@ -93,6 +93,11 @@ Se tudo estiver dado certo, você será levado para pagina de login, para entrar
 # Aplicação Java:
 A aplicação java segue os mesmos padrões de funcionaliades da aplicação web, sua unica difença é que todas funcioanlidades estão em uma unica tela
 
+### Linguagens Usadas:
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"  width="70" height="70" /> <b>Java</b>: Usado para a criação tanto do desing e para as funcionalidades
+ <br>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" width="70" height="70" /><b>SQL</b>: Usado para gerenciar e manipular os dados armazenados nas tabelas do banco de dados
+
 ## como acessar a aplicação?
 vá para a branch "Aplicação-Java" e baixe o repositório
 <br><br>

@@ -10,7 +10,7 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
     <tr>
       <td align="center">
         <a href="https://github.com/Guzhie">
-          <img src="https://avatars.githubusercontent.com/u/125403873?v=4" width="100px;" alt="Rodrigo - Github"/><br>
+          <img src="https://avatars.githubusercontent.com/u/133404058?v=4" width="100px;" alt="Gustavo - Github"/><br>
           <sub>
             <b>Gustavo Henrique</b>
           </sub> <br>

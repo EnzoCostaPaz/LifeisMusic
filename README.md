@@ -18,7 +18,7 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
       </td>
       <td align="center">
         <a href="https://github.com/JHOW-JHOW">
-          <img src="https://avatars.githubusercontent.com/u/125403880?v=4" width="100px;" alt="João Mota - Github"/><br>
+          <img src="https://avatars.githubusercontent.com/u/128919491?v=4" width="100px;" alt="João Mota - Github"/><br>
           <sub>
             <b>Jhonata Alves</b>
           </sub> <br>
@@ -34,6 +34,8 @@ Life is music é um projeto interdisciplinar simulando uma escola de musica onde
         </a>
       </td>
   </table>
+</div>
+  
 ## Aplicação Web
 ### Funcionalidades
 

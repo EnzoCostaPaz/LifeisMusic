@@ -1,3 +1,7 @@
+<p align="center">
+<img src = "https://github.com/user-attachments/assets/9200a8f6-2edd-4573-8c7c-14c5299aa55a">
+</p>
+  
 # oque é Life is Music🎼🎵
 Life is music é um projeto interdisciplinar simulando uma escola de musica onde o usuario pode acessar certas tabelas e fazer diversas funcioanlidades com elas, temos uma aplicação web e uma aplicação Java
 ## Integrantes do Projeto:
@@ -74,4 +78,9 @@ importe os drivers necessarios que estão na pasta <b>/BD</b> dentro do reposit�
 no framework abra a pasta <b>Forms</b> e vá para o arquivo <b>LoginPag.java</b> e rode a aplicação
 <br><br>
 Se tudo tiver dado certo novamente , a aplicação vai ser rodada e apareça uma tela de login para você, faça o mesmo esquema da aplicaçao web para utilizar um usuario e senha
+
+### Alguma de nossas Telas :
+(todas as telas seguem o mesmo padrão)
+- Parte do Aluno:
+  <img src = "https://github.com/user-attachments/assets/584f6c49-d3af-4cae-a7e0-4a3ed439c774">
 

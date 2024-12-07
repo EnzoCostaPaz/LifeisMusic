@@ -2,7 +2,7 @@
 Life is music é um projeto interdisciplinar simulando uma escola de musica onde o usuario pode acessar certas tabelas e fazer diversas funcioanlidades com elas, temos uma aplicação web e uma aplicação Java
 ## Integrantes do Projeto:
 - <a href = "https://github.com/Guzhie">Gustavo Henrique</a>
-- <a href = "">Jhonata Alves</a>
+- <a href = "https://github.com/JHOW-JHOW">Jhonata Alves</a>
 - <a href = "">Enzo Costa Paz</a>
 
 ## Aplicação Web
